@@ -11,7 +11,11 @@
 <body>
   <h1>Exemplo de PHP</h1>
   <?php
-  echo "Hoje é dia " . date("d/M/Y")
+  date_default_timezone_set("America/Sao_Paulo"); // Muda a Time Zone para o Brasil (GMT -3)
+
+  echo "<h3>Hoje é dia " . date("D/m/y") . "</h3>"; // função date() para dia
+
+  echo "E são " . date("G:i:s"); // função date() para hora
   ?>
 </body>
 
