@@ -23,7 +23,7 @@
 
   // PODEMOS USAR DEFINE OU CONST PARA DEFINIR UMA CONTANTE
   define("NOME", "Pietro");
-  const SOBRENOME = "Rosolia";
+  const SOBRENOME = "Rosolia"; // RECOMENDADA
 
   // DEFININDO VARÍAVEIS
   $idade = 20;
