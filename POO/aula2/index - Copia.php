@@ -14,6 +14,9 @@
       $c1= new Caneta;
       $c1 ->modelo= 'BIC Cristal';
       $c1 -> cor = 'Azul';
+      
+      // nao consigo acessar esses atributos:
+
       //$c1 -> ponta = '0.5';
       //$c1 -> carga = 99;
       //$c1 -> tampada = false;
@@ -26,11 +29,10 @@
 
       //$c1->tampar();
 
-      $c1->rabiscar();
+      $c1->rabiscar(); // soh consigo acessar esse método
 
       //$c1->destampar();
 
-      //$c1->rabiscar();
 
     ?>
   </pre>

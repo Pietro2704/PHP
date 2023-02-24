@@ -2,12 +2,21 @@
 
 
 class Caneta{
-
+  // ATRIBUTOS
+    // PUBLICO: A classe atual e todas as outras classes podem mexer nela
+    // PRIVADO: Somente a classe atual pode mexer nele
+    // PROTEGIDO: Classe atual e todas as suas sub-classes podem mexer
+    
   public $modelo;
   public $cor;
+
   private $ponta;
+
   protected $carga;
   protected $tampada;
+
+
+
 
   public function rabiscar(){
 

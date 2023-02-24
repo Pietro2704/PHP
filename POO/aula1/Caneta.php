@@ -1,13 +1,20 @@
 <?php
 
+// CRIANDO UMA CLASSE CHAMADA CANETA
 
 class Caneta{
 
+  // ATRIBUTOS
   var $modelo;
   var $cor;
   var $ponta;
   var $carga;
   var $tampada;
+
+
+
+
+  // MÉTODOS
 
   function rabiscar(){
 
@@ -31,11 +38,3 @@ class Caneta{
 
 
 }
-
-
-
-
-
-
-
-?>
