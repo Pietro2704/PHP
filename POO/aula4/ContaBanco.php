@@ -1,7 +1,7 @@
 <?php
 
   class ContaBanco{
-
+//------------------------------------------------------------------------------------------
     private $numConta;
     protected $tipo;
     private $dono;
@@ -20,19 +20,17 @@
         
     }
     */
-
-
+    //------------------------------------------------------------------------------------------
     public function __construct(){
       $this -> saldo = 0;
       $this -> status = false;
     }
 
     public function abrirConta($n,$tc){
-      $this -> setTipo($tc);
       $this -> setStatus(true);
-
-      //$this -> setNumConta($this -> getNumConta() + 1);
       $this -> dono = $n;
+      $this -> setTipo($tc);
+
 
       if($tc == 'CC'){
         $this -> saldo = 50;
@@ -105,7 +103,7 @@
 
 
 
-
+    //------------------------------------------------------------------------------------------
     public function getNumConta(){
       return $this-> numConta;
     }

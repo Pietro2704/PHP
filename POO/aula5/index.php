@@ -26,13 +26,13 @@
 
     $c1 -> Tocar();
     $c1 -> Aumentar(20);
+    $c1 -> abrirMenu();
+    
     $c1 -> Mudo();
+    $c1 -> Desmute();
     $c1 -> abrirMenu();
 
-    $c1 -> Aumentar(10);
-    $c1 -> abrirMenu();
-
-    //$c1 -> Desligar();
+    $c1 -> Desligar();
     //$c1 -> Diminuir(20);
 
     //print_r($c1);

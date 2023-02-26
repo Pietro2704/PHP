@@ -12,17 +12,20 @@
 
       require_once 'Caneta.php';
 
-      $c1= new Caneta("BIC","Azul","0.5");
-      print_r($c1);
+      $c1= new Caneta("BIC","Azul","0.5"); // MÉTODO CONSTRUCT RECEBE 3 PARÂMETROS
+
+      print_r($c1); // mostre como está a caneta
+
+      print("<br>Eu tenho uma caneta de ponta {$c1 -> getPonta()} da marca {$c1->getModelo()} e é da cor {$c1->getCor()}");
+
 
       /*
-      //$c1 -> modelo = 'BIC';
-      $c1 -> setModelo('BIC');
+      $c1 -> modelo = 'BIC'; - não funciona
+      $c1 -> setModelo('BIC'); - Agr funciona
 
-      //$c1 -> ponta = 0.5;
-      $c1 -> setPonta('0.5'); 
+      $c1 -> ponta = 0.5; - não funciona
+      $c1 -> setPonta('0.5'); - Funciona
 
-      print("Eu tenho uma caneta {$c1->getModelo()} de ponta {$c1 -> getPonta()}");
       */
 
       

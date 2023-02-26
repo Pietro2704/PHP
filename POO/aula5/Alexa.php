@@ -1,4 +1,7 @@
 <?php
+
+// ENCAPSULAMENTO
+
   require_once 'Comandos.php';
   class Alexa implements Comandos{
 
@@ -41,23 +44,26 @@
     }
     public function Desligar(){
       $this->setLigado(false);
+      echo "Desligando";
     }
     public function abrirMenu(){
       if($this->getLigado()){
         echo "<p>-----  MENU  -----</p>";
-        echo ($this->getLigado()) ? "Estou Ligado<br>":"Não estou ligado<br>";
-        echo ($this->getTocando())?"Estou tocando<br>":"Não estou tocando<br>";
 
+        echo ($this->getTocando())?"Estou tocando<br>":"Não estou tocando<br>";
 
         echo "Meu volume está em ".$this->getVolume();
         echo "<br>";
+
         echo "Volume: ";
         for($i=10;$i<=$this->getVolume();$i+=10){
           echo " |";
         }
         echo "<p>-----  ******  -----</p>";
+
       }else{echo "Estou desligado!";}
     }
+
     public function fecharMenu(){
       echo "Fechando Menu...";
     }

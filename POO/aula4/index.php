@@ -13,7 +13,9 @@
       require_once 'ContaBanco.php';
 
       $c1 = new ContaBanco;
+
       $c1 -> setNumConta(42069);
+      
       $c1 -> abrirConta("Pietro","CP");
       $c1 -> depositar(150);
       //$c1 -> sacar(500);
