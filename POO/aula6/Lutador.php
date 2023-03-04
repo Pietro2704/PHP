@@ -1,6 +1,6 @@
 <?php
 
-  // usar interface,primeiro requere depois implementa
+  // usar interface, primeiro requere depois implementa
 
   class Lutador{
     //ATRIBUTOS:
