@@ -87,6 +87,7 @@
     // abstrato
 
     public function apresentar(){
+      echo "<p>-------------------UFC--------------------</p>";
       echo "Lutador: " .$this -> getNome() ."<br>";
       echo "Origem: " .$this -> getNacionalidade() ."<br>";
       echo $this -> getIdade() ." anos" ."<br>";
@@ -95,6 +96,7 @@
       echo "Vitorias: " .$this -> getVitorias() ."<br>";
       echo "Derrotas: " .$this -> getDerrotas() ."<br>";
       echo "Empates: " .$this -> getEmpates() ."<br>";
+      echo "<p>------------------- // --------------------</p><br>";
 
 
     }
