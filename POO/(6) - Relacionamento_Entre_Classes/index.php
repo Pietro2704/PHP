@@ -24,14 +24,14 @@
   $lut[] = new Lutador("Thor","Asgard",3000,1.80,120,0,0,0);
   $lut[] = new Lutador("Tony Stark","Nova Iorque",44,1.75,90,0,0,0);
   $lut[] = new Lutador("Hulk","Nova Iorque",28,2.50,120,0,0,0);
-  $lut[] = new Lutador("Wong","Kamartaj",58,1.65,58,0,0,0);
+  $lut[] = new Lutador("Wong","Kamartaj",58,1.65,72,0,0,0);
   $lut[] = new Lutador("Steve Rogers","Brooklin",110,1.85,100,0,0,0);
   $lut[] = new Lutador("Peter Parker","Queens",17,1.70,70,0,0,0);
 
   //print_r($lut);
 
   for($i=0; $i<=count($lut)-1;$i++){
-    print_r($lut[$i]);
+    $lut[$i] -> apresentar();
   }
 
   ?> 

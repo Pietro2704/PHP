@@ -92,7 +92,7 @@
       echo "Origem: " .$this -> getNacionalidade() ."<br>";
       echo $this -> getIdade() ." anos" ."<br>";
       echo $this -> getAltura() ." m de altura" ."<br>";
-      echo "Pesando" .$this -> getPeso() ." Kg" ."<br>";
+      echo "Pesando " .$this -> getPeso() ." Kg" ."<br>";
       echo "Vitorias: " .$this -> getVitorias() ."<br>";
       echo "Derrotas: " .$this -> getDerrotas() ."<br>";
       echo "Empates: " .$this -> getEmpates() ."<br>";
