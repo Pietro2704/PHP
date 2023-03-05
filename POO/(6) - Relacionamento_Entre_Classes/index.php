@@ -22,10 +22,10 @@
   require("Lutador.php");
   $lut = array();
   $lut[] = new Lutador("Thor","Asgard",3000,1.80,120,0,0,0);
-  $lut[] = new Lutador("Tony Stark","Nova Iorque",44,1.75,100,0,0,0);
-  $lut[] = new Lutador("Hulk","Nova Iorque",28,2.50,390,0,0,0);
-  $lut[] = new Lutador("Wong","Kamartaj",58,1.65,78,0,0,0);
-  $lut[] = new Lutador("Steve Rogers","Brooklin",110,1.85,120,0,0,0);
+  $lut[] = new Lutador("Tony Stark","Nova Iorque",44,1.75,90,0,0,0);
+  $lut[] = new Lutador("Hulk","Nova Iorque",28,2.50,120,0,0,0);
+  $lut[] = new Lutador("Wong","Kamartaj",58,1.65,58,0,0,0);
+  $lut[] = new Lutador("Steve Rogers","Brooklin",110,1.85,100,0,0,0);
   $lut[] = new Lutador("Peter Parker","Queens",17,1.70,70,0,0,0);
 
   //print_r($lut);
