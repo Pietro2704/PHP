@@ -18,7 +18,9 @@
 <body>
 
   <?php
-  
+  require("Lutador.php")
+    $lut1 = new Lutador("Anderson",);
+
   ?> 
   
 </body>
