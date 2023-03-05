@@ -2,7 +2,10 @@
 
 // ENCAPSULAMENTO
 
+  // usar interface, primeiro requere depois implementa
+
   require_once 'Comandos.php';
+
   class Alexa implements Comandos{
 
     private $volume;

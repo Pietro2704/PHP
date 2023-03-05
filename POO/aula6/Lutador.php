@@ -1,9 +1,9 @@
 <?php
 
-  // usar interface, primeiro requere depois implementa
+
 
   class Lutador{
-    
+
     //ATRIBUTOS:
 
     private $nome
