@@ -6,34 +6,18 @@
 
     //ATRIBUTOS:
 
-    private $nome
-    private $nacionalidade
-    private $idade
-    private $altura
-    private $peso
-    private $categoria
-    private $vitorias
-    private $derrotas
-    private $empates
+    private $nome;
+    private $nacionalidade;
+    private $idade;
+    private $altura;
+    private $peso;
+    private $categoria;
+    private $vitorias;
+    private $derrotas;
+    private $empates;
 
 
     //METODOS:
-
-    //construtor
-
-    public function __construct($nome,$nac,$idade,$altura,$peso,$vit,$der,$emp){
-      setNome($nome);
-      setNacionalidade($nac);
-      setIdade($idade);
-      setAltura($altura);
-      setPeso($peso);
-      setVitorias($vit);
-      setDerrotas($der);
-      setEmpates($emp);
-
-    }
-
-
 
     //Get e Set
 
@@ -50,24 +34,27 @@
     private function setAltura($d){$this -> altura = $d;}
 
     private function getPeso(){return $this -> peso;}
-    private function setPeso($e){$this -> peso = $e;}
+    private function setPeso($e){
+      $this -> peso = $e;
+      $this -> setCategoria();
+    }
 
     private function getCategoria(){return $this -> categoria;}
     private function setCategoria(){
-      if(getPeso()<52.2){
-        $this -> categoria = "Inválida"
+      if($this -> getPeso() < 52.2){
+        $this -> categoria = "Inválida";
       }
-      elseif(getPeso()<=70.3){
-        $this -> categoria = "Pena"
+      elseif($this -> getPeso() <= 70.3){
+        $this -> categoria = "Pena";
       }
-      elseif(getPeso()<=83.9){
-        $this -> categoria = "Médio"
+      elseif($this -> getPeso() <= 83.9){
+        $this -> categoria = "Médio";
       }
-      elseif(getPeso()<=120.2){
-        $this -> categoria = "Pesado"
+      elseif($this -> getPeso() <= 120.2){
+        $this -> categoria = "Pesado";
       }
       else{
-        $this -> categoria = "Inválida"
+        $this -> categoria = "Inválida";
       }
     }
 
@@ -82,29 +69,46 @@
 
 
 
+    //construtor
+
+    public function __construct($nome,$nac,$idade,$altura,$peso,$vit,$der,$emp){
+      $this -> setNome($nome);
+      $this -> setNacionalidade($nac);
+      $this -> setIdade($idade);
+      $this -> setAltura($altura);
+      $this -> setPeso($peso);
+      $this -> setVitorias($vit);
+      $this -> setDerrotas($der);
+      $this -> setEmpates($emp);
+
+    }
+
 
     // abstrato
 
     public function apresentar(){
-      echo "Lutador: " .getNome();
-      echo "Origem: " .getNacionalidade();
-      echo getIdade() ." anos";
-      echo getAltura() ." m de altura";
-      echo "Pesando" .getPeso() ." Kg";
-      echo "Vitorias: " .getVitorias();
-      echo "Derrotas: " .getDerrotas();
-      echo "Empates: " .getEmpates();
+      echo "Lutador: " .$this -> getNome() ."<br>";
+      echo "Origem: " .$this -> getNacionalidade() ."<br>";
+      echo $this -> getIdade() ." anos" ."<br>";
+      echo $this -> getAltura() ." m de altura" ."<br>";
+      echo "Pesando" .$this -> getPeso() ." Kg" ."<br>";
+      echo "Vitorias: " .$this -> getVitorias() ."<br>";
+      echo "Derrotas: " .$this -> getDerrotas() ."<br>";
+      echo "Empates: " .$this -> getEmpates() ."<br>";
 
 
     }
     public function status(){
-      echo getNome();
-      echo "É categoria do tipo " .getCategoria();
-      echo "Tem " .getVitorias() ." vitórias, " .getDerrotas() ." derrotas e " .getEmpates() ." empates";
+      echo $this -> getNome() ."<br>";
+      echo "É categoria do tipo " .$this -> getCategoria() ."<br>";
+      echo "Tem " .$this -> getVitorias() ." vitórias, " .$this -> getDerrotas() ." derrotas e " .$this -> getEmpates() ." empates" ."<br>";
     }
-    public function ganharLuta(){setVitorias()+1;}
-    public function perderLuta(){setDerrotas()+1;}
-    public function empatarLuta(){setEmpates()+1;}
+
+    public function ganharLuta(){$this -> setVitorias()+1;}
+
+    public function perderLuta(){$this -> setDerrotas()+1;}
+
+    public function empatarLuta(){$this -> setEmpates()+1;}
 
 
 

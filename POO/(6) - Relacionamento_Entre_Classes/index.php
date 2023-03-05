@@ -18,8 +18,9 @@
 <body>
 
   <?php
-  require("Lutador.php")
-    $lut1 = new Lutador("Anderson",);
+  require("Lutador.php");
+  $lut1 = new Lutador("Anderson","Canada",45,1.80,100,0,0,0);
+  $lut1 -> status();
 
   ?> 
   
