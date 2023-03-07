@@ -21,26 +21,26 @@
 
     //Get e Set
 
-    private function getNome(){return $this -> nome;}
-    private function setNome($a){$this -> nome = $a;}
+    public function getNome(){return $this -> nome;}
+    public function setNome($a){$this -> nome = $a;}
 
-    private function getNacionalidade(){return $this -> nacionalidade;}
-    private function setNacionalidade($b){$this -> nacionalidade = $b;}
+    public function getNacionalidade(){return $this -> nacionalidade;}
+    public function setNacionalidade($b){$this -> nacionalidade = $b;}
     
-    private function getIdade(){return $this -> idade;}
-    private function setIdade($c){$this -> idade = $c;}
+    public function getIdade(){return $this -> idade;}
+    public function setIdade($c){$this -> idade = $c;}
 
-    private function getAltura(){return $this -> altura;}
-    private function setAltura($d){$this -> altura = $d;}
+    public function getAltura(){return $this -> altura;}
+    public function setAltura($d){$this -> altura = $d;}
 
-    private function getPeso(){return $this -> peso;}
-    private function setPeso($e){
+    public function getPeso(){return $this -> peso;}
+    public function setPeso($e){
       $this -> peso = $e;
       $this -> setCategoria();
     }
 
-    private function getCategoria(){return $this -> categoria;}
-    private function setCategoria(){
+    public function getCategoria(){return $this -> categoria;}
+    public function setCategoria(){
       if($this -> getPeso() < 52.2){
         $this -> categoria = "Inválida";
       }
@@ -58,14 +58,14 @@
       }
     }
 
-    private function getVitorias(){return $this -> vitorias;}
-    private function setVitorias($g){$this -> vitorias = $g;}
+    public function getVitorias(){return $this -> vitorias;}
+    public function setVitorias($g){$this -> vitorias = $g;}
 
-    private function getDerrotas(){return $this -> derrotas;}
-    private function setDerrotas($h){$this -> derrotas = $h;}
+    public function getDerrotas(){return $this -> derrotas;}
+    public function setDerrotas($h){$this -> derrotas = $h;}
 
-    private function getEmpates(){return $this -> empates;}
-    private function setEmpates($i){$this -> empates = $i;}
+    public function getEmpates(){return $this -> empates;}
+    public function setEmpates($i){$this -> empates = $i;}
 
 
 
@@ -101,16 +101,18 @@
 
     }
     public function status(){
+      echo "----------------------------------------------------------------------------<br>";
       echo $this -> getNome() ."<br>";
       echo "É categoria do tipo " .$this -> getCategoria() ."<br>";
       echo "Tem " .$this -> getVitorias() ." vitórias, " .$this -> getDerrotas() ." derrotas e " .$this -> getEmpates() ." empates" ."<br>";
+      echo "----------------------------------------------------------------------------<br>";
     }
 
-    public function ganharLuta(){$this -> setVitorias()+1;}
+    public function ganharLuta(){$this -> setVitorias($this->getVitorias()+1);}
 
-    public function perderLuta(){$this -> setDerrotas()+1;}
+    public function perderLuta(){$this -> setDerrotas($this->getDerrotas()+1);}
 
-    public function empatarLuta(){$this -> setEmpates()+1;}
+    public function empatarLuta(){$this -> setEmpates($this->getEmpates()+1);}
 
   }
 ?>

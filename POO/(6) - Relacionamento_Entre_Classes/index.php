@@ -19,7 +19,9 @@
   <pre>
 
   <?php
-  require("Lutador.php");
+  require_once "Lutador.php";
+  require_once "Luta.php";
+
   $lut = array();
   $lut[] = new Lutador("Thor","Asgard",3000,1.80,120,0,0,0);
   $lut[] = new Lutador("Tony Stark","Nova Iorque",44,1.75,90,0,0,0);
@@ -28,19 +30,23 @@
   $lut[] = new Lutador("Steve Rogers","Brooklin",110,1.85,100,0,0,0);
   $lut[] = new Lutador("Peter Parker","Queens",17,1.70,70,0,0,0);
 
+  
+  $ufc = array();
+  $ufc[] = new Luta();
+  $ufc[0] -> marcarLuta($lut[0],$lut[2]);
+  $ufc[0]-> lutar();
+  echo "<br>";
+  $lut[0] -> status();
+  $lut[2] -> status();
+
   //print_r($lut);
 
 
   /*
   for($i=0; $i<=count($lut)-1;$i++){
     $lut[$i] -> apresentar();
-  }
-  */
-
-  require("Luta.php");
-  $ufc = array();
-  $ufc = new Luta();
-  $ufc -> marcarLuta(l[0],l[2]);
+  }  
+  */  
 
   ?> 
   </pre>

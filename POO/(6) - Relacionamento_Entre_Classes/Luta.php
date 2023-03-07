@@ -1,6 +1,6 @@
 <?php 
-
-  class Luta extends Lutador
+  require_once "Lutador.php";
+  class Luta
   {
     private $desafiado;
     private $desafiante;
@@ -37,7 +37,6 @@
     }
     private function setRounds($round){
         $this->rounds = $round;
-
         return $this;
     }
 
@@ -46,22 +45,22 @@
     }
     private function setAprovada($ss){
         $this->aprovada = $ss;
-
         return $this;
     }
 
 
 
     public function marcarLuta($l1,$l2){
-      if(($this->getDesafiado()) != ($this->getDesafiante())){
-        if(($l1.getCategoria()) == ($l2.getCategoria())){
-
+      if($l1 != $l2){
+        if(($l1->getCategoria()) == ($l2->getCategoria())){
+          echo "Aprovada";
           $this->setAprovada(true);
           $this->setDesafiado($l1);
           $this->setDesafiante($l2);
         }
       }
       else{
+        echo "Não está aprovada";
         $this->setAprovada(false);
         $this->setDesafiado(NULL);
         $this->setDesafiante(NULL);
@@ -69,25 +68,25 @@
     }
     public function lutar(){
       if($this->getAprovada()){
-        $this->getDesafiado().apresentar();
-        $this->getDesafiante().apresentar();
+        $this->getDesafiado()->apresentar();
+        $this->getDesafiante()->apresentar();
 
         $vencedor = rand(0,2);
         switch($vencedor){
           case "0":
             echo "Empatou!";
-            $this->getDesafiado().empatarLuta();
-            $this->getDesafiante().empatarLuta();
+            $this->getDesafiado()->empatarLuta();
+            $this->getDesafiante()->empatarLuta();
             break;
           case "1":
-            echo "{$this->getDesafiante()} GANHOUU!!";
-            $this->getDesafiado().perderLuta();
-            $this->getDesafiante().ganharLuta();
+            echo "{$this->getDesafiante()->getNome()} GANHOUU!!";
+            $this->getDesafiado()->perderLuta();
+            $this->getDesafiante()->ganharLuta();
             break;
           case "2":
-            echo "{$this->getDesafiado()} GANHOUU!!";
-            $this->getDesafiado().ganharLuta();
-            $this->getDesafiante().perderLuta();
+            echo "{$this->getDesafiado()->getNome()} GANHOUU!!";
+            $this->getDesafiado()->ganharLuta();
+            $this->getDesafiante()->perderLuta();
             break;
         }
       }
