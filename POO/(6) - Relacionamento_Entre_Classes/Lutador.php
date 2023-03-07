@@ -112,7 +112,5 @@
 
     public function empatarLuta(){$this -> setEmpates()+1;}
 
-
-
   }
 ?>

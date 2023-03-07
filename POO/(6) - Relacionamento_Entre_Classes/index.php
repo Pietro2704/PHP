@@ -30,9 +30,17 @@
 
   //print_r($lut);
 
+
+  /*
   for($i=0; $i<=count($lut)-1;$i++){
     $lut[$i] -> apresentar();
   }
+  */
+
+  require("Luta.php");
+  $ufc = array();
+  $ufc = new Luta();
+  $ufc -> marcarLuta(l[0],l[2]);
 
   ?> 
   </pre>
