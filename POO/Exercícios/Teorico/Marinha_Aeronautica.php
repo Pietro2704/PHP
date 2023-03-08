@@ -146,21 +146,21 @@
 -------------------------------------------------------------------------------------------------------------------------------------------
   (CAP-PD - 2014)
 
-  1) 
+  1) Qual é o conceito de POO que significa representar uma entidade, incluindo apenas seus atributos mais relevantes?
 
-    a) 
-    b) 
-    c) 
-    d) 
+    a) Encapsulamento
+    b) Polimorfismo
+    c) Herança
+ -- d) Abstração
 
 
 
-  2) 
+  2) Com relação aos conceitos de POO, assinale a alternativa incorreta
 
-    a) 
-    b) 
-    c) 
-    d) 
+    a) Classes são tipos abstratos de dados
+    b) Objetos são instâncias de uma classe
+    c) Subclasse é uma classe definida por meio de outra classe
+ -- d) Atributos são subprogramas que definem as operações em objetos de uma classe
 
 */
 ?>
