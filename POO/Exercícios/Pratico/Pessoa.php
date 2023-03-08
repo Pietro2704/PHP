@@ -49,7 +49,8 @@
       // Comportamento:
 
       public function apresentar(){
-        echo "Olá, meu nome é {$this->getNome()}, tenho {$this->getIdade()} anos e sou do sexo {$this->getSexo()}";
+        echo "<br>Olá, meu nome é {$this->getNome()}, tenho {$this->getIdade()} anos e sou do sexo {$this->getSexo()}<br>";
+        
       }
 
       public function fazerNiver(){

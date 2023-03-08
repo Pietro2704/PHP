@@ -75,39 +75,76 @@
 
 
 
-    public function __construct($t,$au,$tp,$l){
+    public function __construct($t,$au,$tp){
       $this->setTitulo($t);
       $this->setAutor($au);
       $this->setTotPaginas($tp);
+      $this->setLeitor(NULL);
       $this->setAberto(false);
-      $this->setLeitor($l);
+      $this->setPagAtual(0);
     }
 
 
 
     public function detalhe(){
-      echo "<br>Este livro se chama ".$this->getTitulo() .", tem ".$this->getTotPaginas() ." páginas e foi escrito por " .$this->getAutor();
+      if($this->getLeitor() != NULL){
+        echo "<br>-------------------------------------------------------------------------------<br>";
+        echo "Nome: {$this->getTitulo()}<br>";
+        echo "Páginas: {$this->getTotPaginas()}<br>";
+        echo "Página Atual: {$this->getPagAtual()}<br>";
+        echo "Escrito por: {$this->getAutor()}<br>";
+        echo "Leitor: {$this->getLeitor()->getNome()}";
+        echo "<br>-------------------------------------------------------------------------------<br>";
+      }
+      else{
+        echo "<br>-------------------------------------------------------------------------------<br>";
+        echo "Nome: {$this->getTitulo()}<br>";
+        echo "Páginas: {$this->getTotPaginas()}<br>";
+        echo "Página Atual: {$this->getPagAtual()}<br>";
+        echo "Escrito por: {$this->getAutor()}<br>";
+        echo "Leitor: Vazio";
+        echo "<br>-------------------------------------------------------------------------------<br>";
+      }
+    }
+
+    public function leitor($l){
+      $this->setLeitor($l);
     }
     
     public function abrir(){
+      $this->setPagAtual(1);
       $this->setAberto(true);
     }
     public function fechar(){
+      $this->setPagAtual(0);
       $this->setAberto(false);
     }
     public function folhear($p){
       if($p>$this->getTotPaginas()){
-        echo "<br>Este livro só tem {$this->getTotPaginas()} páginas<br>";
+        echo "<br>Está pagina não foi encontrada, este livro só tem {$this->getTotPaginas()} páginas<br>";
+      }
+      if($p<0){
+        echo "<br>Está pagina não foi encontrada, este livro só tem {$this->getTotPaginas()} páginas<br>";
       }
       else{
         $this->setPagAtual($p);
       }
     }
     public function avancarPag(){
-      $this->setPagAtual($this->getPagAtual()+1);
+      if(($this->getPagAtual()) < ($this->getTotPaginas())){
+        $this->setPagAtual($this->getPagAtual()+1);
+      }
+      else{
+        echo "<br>Este livro só tem {$this->getTotPaginas()} páginas<br>";
+      }
     }
     public function voltarPag(){
-      $this->setPagAtual($this->getPagAtual()-1);
+      if($this->getPagAtual() > 0){
+        $this->setPagAtual($this->getPagAtual()+1);
+      }
+      else{
+        echo "<br>Este livro só tem {$this->getTotPaginas()} páginas<br>";
+      }
     }
   }
 ?>
