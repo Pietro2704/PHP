@@ -1,5 +1,9 @@
-<?php 
-  class Livro
+<?php
+
+  require_once "Pessoa.php";
+  require_once "Publicacao.php";
+
+  class Livro implements Publicacao
   {
     private $titulo;
     private $autor;
@@ -9,7 +13,7 @@
     private $leitor;
 
     
-    
+
     public function getTitulo(){
         return $this->titulo;
     }
@@ -71,18 +75,39 @@
 
 
 
-    public function __construct($t,$au,$tp){
+    public function __construct($t,$au,$tp,$l){
       $this->setTitulo($t);
       $this->setAutor($au);
       $this->setTotPaginas($tp);
       $this->setAberto(false);
-      $this->setLeitor(NULL);
+      $this->setLeitor($l);
     }
 
 
 
     public function detalhe(){
-      echo "<br>Este livro se chama {$this->getTitulo()}, tem {$this->getTotPaginas()} páginas e foi escrito por {$this->getAutor()}";
+      echo "<br>Este livro se chama ".$this->getTitulo() .", tem ".$this->getTotPaginas() ." páginas e foi escrito por " .$this->getAutor();
+    }
+    
+    public function abrir(){
+      $this->setAberto(true);
+    }
+    public function fechar(){
+      $this->setAberto(false);
+    }
+    public function folhear($p){
+      if($p>$this->getTotPaginas()){
+        echo "<br>Este livro só tem {$this->getTotPaginas()} páginas<br>";
+      }
+      else{
+        $this->setPagAtual($p);
+      }
+    }
+    public function avancarPag(){
+      $this->setPagAtual($this->getPagAtual()+1);
+    }
+    public function voltarPag(){
+      $this->setPagAtual($this->getPagAtual()-1);
     }
   }
 ?>
