@@ -115,5 +115,53 @@
     c) Confiável, Reutilizável, Extensível, Mensurável, Acessível e Fácil de Usar
     d) Extensível, Natural, Mensurável, Reutilizável, Instantâneo e Simples
 
+-------------------------------------------------------------------------------------------------------------------------------------------
+  (CAP-PD - 2006)
+
+  1) Uma casa está para uma planta arquitetônica assim como um objeto está para:
+
+    a) Um método
+    b) Uma propriedade
+ -- c) Uma classe
+    d) Um atributo
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+  (CAP-PD - 2009)
+
+  1) A proteção de atributos e operações das classes, fazendo com que estas se comuniquem com o meio externo por meio de suas interfaces, define o conceito de:
+
+    a) Polimorfismo
+ -- b) Encapsulamento
+    c) Herança
+    d) Agregação
+
+
+
+  2) Quando se utiliza o conceito de encapsulamento da POO, enquanto a _____ define os detalhes internos do componente, a _____ lista os serviços fornecidos por ele
+
+    a) Interface - Implementação
+    b) Classe - Implementação
+    c) Interface - Classe
+ -- d) Implementação - Interface
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+  (CAP-PD - 2014)
+
+  1) 
+
+    a) 
+    b) 
+    c) 
+    d) 
+
+
+
+  2) 
+
+    a) 
+    b) 
+    c) 
+    d) 
+
 */
 ?>
