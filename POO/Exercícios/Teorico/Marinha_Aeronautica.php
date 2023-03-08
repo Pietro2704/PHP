@@ -66,5 +66,54 @@
     c) 2, 3, 1, 5, 4
     d) 2, 4, 3, 1, 5
 
+-------------------------------------------------------------------------------------------------------------------------------------------
+  (EAGS - 2013)
+
+  1) Correlacione as colunas e assinale a alternativa que contém a sequência 
+
+    (1) Construtor                  () Métodos que dão acesso a dados internos
+    (2) Acessor                     () Define as diferentes espécies de valores que podem ser usados
+    (3) Mutantes                    () Métodos que permitem que se altere o estado de um objeto
+    (4) Tipos                       () Métodos usados para inicializar objetos durante a instanciação
+
+    a) 1, 2, 3, 4
+    b) 2, 4, 1, 3
+ -- c) 2, 4, 3, 1
+    d) 4, 2, 3, 1
+
+
+
+  2) Correlacione as colunas e assinale a alternativa que contém a sequência
+
+    (1) Classe                      () Define o que uma entidade pode fazer com o objeto
+    (2) Interface                   () Instanciação de uma classe
+    (3) Construtor                  () Define os atributos e os comportamentos compartilhados
+    (4) Objeto                      () Utilizado para inicializar objetos
+
+    a) 1, 2, 4, 3
+    b) 1, 4, 2, 3
+    c) 2, 3, 1, 4
+ -- d) 2, 4, 1, 3
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+  (EAGS - 2014)
+
+  1) Quais são os três pilares da Programação Orientada a Objeto?
+
+    a) Herança, Polimorfismo e Instância
+    b) Herança, Polimorfismo e Metodologia
+ -- c) Encapsulamento, Herança e Polimorfismo
+    d) Encapsulamento, Polimorfismo e Metodologia
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+  (EAGS - 2015)
+
+  1) A programação orientada a objeto se preocupa em produzir software que tenha as seguintes características:
+
+ -- a) Natural, Confiável, Reutilizável, Manutenível, Extensível e Oportuno
+    b) Natural, Mensurável, Manutenível, Instantâneo, Acessível e Confiável
+    c) Confiável, Reutilizável, Extensível, Mensurável, Acessível e Fácil de Usar
+    d) Extensível, Natural, Mensurável, Reutilizável, Instantâneo e Simples
+
 */
 ?>
