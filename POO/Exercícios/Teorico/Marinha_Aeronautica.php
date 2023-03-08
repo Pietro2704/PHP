@@ -41,7 +41,9 @@
 
 
 
-  2) _____ é a característica da POO que permite separar o programa em várias partes menores e independentes. Cada parte possui implementação isolada e realiza seu trabalho de forma autônoma. Com essa característica é possível ocultar os detalhes internos de cada parte através de uma interface.
+  2) _____ é a característica da POO que permite separar o programa em várias partes menores e independentes.
+  Cada parte possui implementação isolada e realiza seu trabalho de forma autônoma.
+  Com essa característica é possível ocultar os detalhes internos de cada parte através de uma interface.
 
     a) Herança
     b) Hierarquia
