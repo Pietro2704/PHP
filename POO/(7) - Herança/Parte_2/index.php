@@ -48,12 +48,12 @@
   <pre>
     <?php
       require_once "Visitante.php";
-      require_once "Aluno.php";
       require_once "Professor.php";
+      require_once "Aluno.php";
       require_once "Bolsista.php";
+      require_once "Tecnico.php";
 
       // Classe Pessoa é abstrata...
-      // Função apresentar em Pessoa está sendo sobrescrito por cada Classe herdada de Pessoa
 
       $v = new Visitante();
       // Visitante herdou atributos de Pessoa
@@ -79,7 +79,7 @@
       // Métodos de Pessoa + Professor
       $p -> fazerNiver();
       $p -> ReceberAumento(60);
-      $p -> apresentar();
+      $p -> apresentar(); // Foi sobrescrito na para a classe Professor
 
 
 
@@ -90,11 +90,11 @@
       $a -> setSexo("F");
       // Atributos de Aluno
       $a -> setMatricula(922106960);
-      $a -> setCurso("ADS");
+      $a -> setCurso("Enfermagem");
       print_r($a);
       // Métodos de Pessoa + Aluno
       $a -> fazerNiver();
-      $a -> apresentar();
+      $a -> apresentar(); // Foi sobrescrito na para a classe Aluno
       $a -> pagarMensalidade();
       $a -> cancelarMatricula();
 
@@ -113,10 +113,31 @@
       print_r($b);
       // Métodos de Pessoa + Aluno + Bolsista
       $b -> fazerNiver();
-      $b -> apresentar();
+      $b -> apresentar(); // Foi sobrescrito na para a classe Bolsista
       $b -> renovarBolsa();
       $b -> pagarMensalidade(); // Foi sobrescrito na para a classe Bolsista
       $b -> cancelarMatricula();
+
+
+
+      $t = new Tecnico();
+      // Tecnico herdou atributos de Pessoa
+      $t -> setNome("Yago");
+      $t -> setIdade(20);
+      $t -> setSexo("M");
+      // Tecnico herdou atributos de Aluno
+      $t -> setMatricula(6942069);
+      $t -> setCurso("ADS");
+      // Atributo de Tecnico
+      $t -> setRegistroProfissional(4554);
+      print_r($t);
+      // Métodos de Pessoa + Aluno + Tecnico
+      $t -> fazerNiver();
+      $t -> apresentar(); // Foi sobrescrito na para a classe Tecnico
+      $t -> praticar();
+      $t -> pagarMensalidade(); // Foi sobrescrito na para a classe Tecnico
+      $t -> cancelarMatricula();
+
 
     ?>
   </pre>
