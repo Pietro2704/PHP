@@ -8,10 +8,10 @@
   <!-- 
     Árvore de Herança:
 
-           -------A--------
-           |      |       |
-         --AA   --AB--    AC--
-        |       |    |        |
+            ______A_______
+           |      |       | 
+         __AA   __AB__    AC__
+        |      |      |       |
         AAA   ABA   ABB     ACA
                | 
            ABAA ABAB
