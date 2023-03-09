@@ -45,6 +45,59 @@
    -->
 </head>
 <body>
-  
+  <pre>
+    <?php
+      require_once "Visitante.php";
+      require_once "Aluno.php";
+      require_once "Bolsista.php";
+
+      // Classe Pessoa é abstrata...
+
+      $v = new Visitante();
+      // Visitante herdou atributos de Pessoa
+      $v -> setNome("Pietro");
+      $v -> setIdade(20);
+      $v -> setSexo("M");
+      print_r($v);
+      // Visitante herdou Métodos de Pessoa
+      $v -> fazerNiver();
+      $v -> apresentar();
+
+
+
+      $a = new Aluno();
+      // Aluno herdou atributos de Pessoa
+      $a -> setNome("Ana Clara");
+      $a -> setIdade(18);
+      $a -> setSexo("F");
+      // Atributos de Aluno
+      $a -> setMatricula(922106960);
+      $a -> setCurso("ADS");
+      print_r($a);
+      // Métodos de Pessoa + Aluno
+      $a -> pagarMensalidade();
+      $a -> cancelarMatricula();
+      $a -> fazerNiver();
+      $a -> apresentar();
+
+
+
+      $b = new Bolsista();
+      // Bolsista herdou atributos de Pessoa
+      $b -> setNome("Demétrio");
+      $b -> setIdade(19);
+      $b -> setSexo("M");
+      // Bolsista herdou atributos de Aluno
+      $b -> setMatricula(10996940);
+      $b -> setCurso("Sistema da Informação");
+      // Atributo de Bolsista
+      $b -> setBolsa(70);
+      print_r($b);
+      // Métodos de Bolsista
+      $b -> pagarMensalidade();
+      $b -> cancelarMatricula();
+
+    ?>
+  </pre>
 </body>
 </html>
