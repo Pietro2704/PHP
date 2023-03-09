@@ -1,12 +1,12 @@
 <?php 
-require_once "Pessoa";
+require_once "Pessoa.php";
 class Professor extends Pessoa
 {
   private $especialidade;
   private $salario;
 
   public function apresentar(){
-    echo "<br>Olá, meu nome é {$this->getNome()}, sou especializado em {$this->getEspecialidade()} e recebo {$this->getSalario()} reais por mês<br>";
+    echo "<br>Olá, meu nome é {$this->getNome()}, tenho {$this->getIdade()} anos, sou especializado em {$this->getEspecialidade()} e recebo {$this->getSalario()} reais por mês<br>";
   }
 
   public function ReceberAumento($valor){

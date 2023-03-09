@@ -49,6 +49,7 @@
     <?php
       require_once "Visitante.php";
       require_once "Aluno.php";
+      require_once "Professor.php";
       require_once "Bolsista.php";
 
       // Classe Pessoa é abstrata...
@@ -74,11 +75,11 @@
       // Atributos de Professor
       $p -> setEspecialidade("Javascript");
       $p -> setSalario(1200);
-      print_r($a);
+      print_r($p);
       // Métodos de Pessoa + Professor
       $p -> fazerNiver();
-      $p -> apresentar();
       $p -> ReceberAumento(60);
+      $p -> apresentar();
 
 
 

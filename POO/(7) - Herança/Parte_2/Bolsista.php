@@ -5,7 +5,7 @@ class Bolsista extends Aluno
   private $bolsa;
 
   public function apresentar(){
-    echo "<br>Olá, meu nome é {$this->getNome()}, tenho bolsa de {$this->getBolsa()}% e estou fazendo o curso {$this->getCurso()} e meu número de matrícula é {$this->getMatricula()}<br>";
+    echo "<br>Olá, meu nome é {$this->getNome()}, tenho {$this->getIdade()} anos, tenho bolsa de {$this->getBolsa()}%, estou fazendo o curso {$this->getCurso()} e meu número de matrícula é {$this->getMatricula()}<br>";
   }
 
   public function renovarBolsa(){
