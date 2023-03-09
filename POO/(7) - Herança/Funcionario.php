@@ -1,4 +1,5 @@
 <?php 
+require_once "Pessoa.php";
 class Funcionario extends Pessoa
 {
   private $setor;
@@ -19,13 +20,13 @@ class Funcionario extends Pessoa
     $this->trabalhando = $trabalhando;
     return $this;
   }
-
+  /*
   public function __construct(){
 
   }
-
-  public function mudarTrabalho(){
-    
+  */
+  public function demissao(){
+    $this->setTrabalhando(!$this->getTrabalhando());
   }
 }
 ?>

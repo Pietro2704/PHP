@@ -31,12 +31,13 @@ class Pessoa
     $this->sexo = $sexo;
     return $this;
   }
-
+  /*
   public function __construct($no,$id,$sex){
     $this -> setNome($no);
     $this -> setIdade($id);
     $this -> setSexo($sex);
   }
+  */
 
   public function apresentar(){
     echo "<br>Olá, meu nome é {$this->getNome()}, tenho {$this->getIdade()} anos e sou do sexo {$this->getSexo()}<br>";

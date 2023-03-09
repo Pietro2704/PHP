@@ -1,4 +1,5 @@
 <?php 
+require_once "Pessoa.php";
 class Professor extends Pessoa
 {
   private $especialidade;
@@ -19,13 +20,14 @@ class Professor extends Pessoa
     $this->salario = $salario;
     return $this;
   }
-
+  /*
   public function __construct(){
 
   }
-
-  public function ReceberAumento(){
-    
+  */
+  public function ReceberAumento($valor){
+    $ajuste = ($this->getSalario() * $valor/100) + $this->getSalario();
+    $this->setSalario($ajuste);
   }
 }
 ?>

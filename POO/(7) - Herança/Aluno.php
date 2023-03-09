@@ -1,4 +1,5 @@
 <?php 
+require_once "Pessoa.php";
 class Aluno extends Pessoa
 {
   private $matricula;
@@ -20,12 +21,14 @@ class Aluno extends Pessoa
     return $this;
   }
 
+  /*
   public function __construct(){
 
   }
+  */
 
   public function cancelarMatricula(){
-    
+    $this->setMatricula(NULL);
   }
 }
 ?>
