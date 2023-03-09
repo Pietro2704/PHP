@@ -14,7 +14,7 @@
         |      |      |       |
         AAA   ABA   ABB     ACA
                | 
-           ABAA ABAB
+          ABAA - ABAB
 
       Raíz: A
       Progenitora: São as filhas
