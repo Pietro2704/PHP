@@ -5,7 +5,10 @@ class Aluno extends Pessoa
   private $matricula;
   private $curso;
 
-  
+  public function apresentar(){
+    echo "<br>Olá, meu nome é {$this->getNome()}, estou fazendo o curso {$this->getCurso()} e meu número de matrícula é {$this->getMatricula()}<br>";
+  }
+
   public function cancelarMatricula(){
     $this->setMatricula(NULL);
   }

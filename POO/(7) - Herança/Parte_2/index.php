@@ -17,7 +17,7 @@
           ABAA - ABAB
 
       Raíz: A
-      Progenitora: São as filhas
+      Progenitora: Aquela que dá origem a outra
       Ancestral: A é ancestral de AAA
       Descendente: ACA é descendente de A
       Folhas: Não tem Filhos
@@ -52,6 +52,7 @@
       require_once "Bolsista.php";
 
       // Classe Pessoa é abstrata...
+      // Função apresentar em Pessoa está sendo sobrescrito por cada Classe herdada de Pessoa
 
       $v = new Visitante();
       // Visitante herdou atributos de Pessoa
@@ -65,6 +66,22 @@
 
 
 
+      $p = new Professor();
+      // Professor herdou atributos de Pessoa
+      $p -> setNome("Traue");
+      $p -> setIdade(38);
+      $p -> setSexo("M");
+      // Atributos de Professor
+      $p -> setEspecialidade("Javascript");
+      $p -> setSalario(1200);
+      print_r($a);
+      // Métodos de Pessoa + Professor
+      $p -> fazerNiver();
+      $p -> apresentar();
+      $p -> ReceberAumento(60);
+
+
+
       $a = new Aluno();
       // Aluno herdou atributos de Pessoa
       $a -> setNome("Ana Clara");
@@ -75,10 +92,10 @@
       $a -> setCurso("ADS");
       print_r($a);
       // Métodos de Pessoa + Aluno
-      $a -> pagarMensalidade();
-      $a -> cancelarMatricula();
       $a -> fazerNiver();
       $a -> apresentar();
+      $a -> pagarMensalidade();
+      $a -> cancelarMatricula();
 
 
 
@@ -93,8 +110,11 @@
       // Atributo de Bolsista
       $b -> setBolsa(70);
       print_r($b);
-      // Métodos de Bolsista
-      $b -> pagarMensalidade();
+      // Métodos de Pessoa + Aluno + Bolsista
+      $b -> fazerNiver();
+      $b -> apresentar();
+      $b -> renovarBolsa();
+      $b -> pagarMensalidade(); // Foi sobrescrito na para a classe Bolsista
       $b -> cancelarMatricula();
 
     ?>
