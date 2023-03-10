@@ -16,19 +16,19 @@
     }
 
 
-    protected function getPeso(){
+    public function getPeso(){
         return $this->peso;
     }
-    protected function setPeso($peso){
+    public function setPeso($peso){
         $this->peso = $peso;
         return $this;
     }
 
 
-    protected function getIdade(){
+    public function getIdade(){
         return $this->idade;
     }
-    protected function setIdade($idade){
+    public function setIdade($idade){
         $this->idade = $idade;
         return $this;
     }

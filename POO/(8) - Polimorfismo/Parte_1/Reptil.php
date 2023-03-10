@@ -2,23 +2,23 @@
 require_once "Animal.php";
 class Reptil extends Animal
 {
-  private $corEscama
+  private $corEscama;
 
   public function locomover(){
-    echo "Rastejando";
+    echo "Rastejando<br>";
   }
   public function alimentar(){
-    echo "Comendo alface"
+    echo "Comendo alface<br>";
   }
   public function emitirSom(){
-    echo "....HHÉÉÉÉ....";
+    echo "....HHÉÉÉÉ....<br>";
   }
  
-  private function getCorEscama(){
+  public function getCorEscama(){
     return $this->corEscama;
   }
 
-  private function setCorEscama($corEscama){
+  public function setCorEscama($corEscama){
     $this->corEscama = $corEscama;
     return $this;
   }

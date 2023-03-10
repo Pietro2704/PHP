@@ -7,24 +7,24 @@ class Peixe extends Animal
 
 
   public function locomover(){
-    echo "Nadando";
+    echo "Nadando<br>";
   }
   public function alimentar(){
-    echo "Comendo comida de peixe"
+    echo "Comendo comida de peixe<br>";
   }
   public function emitirSom(){
-    echo "blup blup. . ."
+    echo "blup blup. . .<br>";
   }
   public function soltarBolhas(){
-    echo "Soltou " .rand(1,7)" bolha(s)"
+    echo "Soltou " .rand(1,7) ." bolha(s)<br>";
   }
 
 
 
-  private function getCorEscama(){
+  public function getCorEscama(){
     return $this->corEscama;
   }
-  private function setCorEscama($corEscama){
+  public function setCorEscama($corEscama){
     $this->corEscama = $corEscama;
     return $this;
   }
