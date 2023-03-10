@@ -3,7 +3,7 @@ require_once "Reptil.php";
 class Tartaruga extends Reptil
 {
   public function locomover(){
-    echo "Andando beeem devagar";
+    echo "Andando beeem devagar<br>";
   }
 }
 ?>

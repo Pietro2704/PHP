@@ -233,6 +233,10 @@
           $animal[2][1] -> alimentar();
           $animal[2][1] -> emitirSom();
 
+          // Herdou Métodos de Peixe
+          $animal[2][1] -> soltarBolhas();
+          
+
           
           
           
@@ -283,6 +287,9 @@
         $animal[3][1] -> locomover();
         $animal[3][1] -> alimentar();
         $animal[3][1] -> emitirSom();
+
+         // Herdou Métodos de Ave
+         $animal[3][1] -> fazerNinho();
     
     //print_r($animal);
     ?>

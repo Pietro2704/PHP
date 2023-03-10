@@ -8,13 +8,13 @@ class Ave extends Animal
     echo "Montando o ninho...<br>";
   }
   public function locomover(){
-    echo "Voando<br>";
+    echo "locomovendo igual ave<br>";
   }
   public function alimentar(){
-    echo "Comendo peixe<br>";
+    echo "Comendo igual ave<br>";
   }
   public function emitirSom(){
-    echo "Piu Piu Piu<br>";
+    echo "Som de ave<br>";
   }
 
  
