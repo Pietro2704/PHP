@@ -69,50 +69,50 @@
 
     echo "<hr>";// ______________________________________
 
-          // Na coluna dos Mamíferos temos o Canguru
-          $animal[0][1] = new Canguru();
+                // Na coluna dos Mamíferos temos o Canguru
+                $animal[0][1] = new Canguru();
 
-          // Herdou Atributos de Animal
-          $animal[0][1] -> setPeso("25 kg");
-          $animal[0][1] -> setIdade(16);
-          $animal[0][1] -> setMembros("Patas");
+                // Herdou Atributos de Animal
+                $animal[0][1] -> setPeso("25 kg");
+                $animal[0][1] -> setIdade(16);
+                $animal[0][1] -> setMembros("Patas");
 
-          // Herdou Atributos de Mamífero
-          $animal[0][1] -> setCorPelo("Laranja");
+                // Herdou Atributos de Mamífero
+                $animal[0][1] -> setCorPelo("Laranja");
 
-          print_r($animal[0][1]);
-          
-          // Herdou Métodos de Animal
-          $animal[0][1] -> locomover(); // Sobrescrito na cla
-          $animal[0][1] -> alimentar();
-          $animal[0][1] -> emitirSom();
+                print_r($animal[0][1]);
+                
+                // Herdou Métodos de Animal
+                $animal[0][1] -> locomover(); // Sobrescrito na classe
+                $animal[0][1] -> alimentar();
+                $animal[0][1] -> emitirSom();
 
-          // Tem seu próprio Método
-          $animal[0][1] -> usarBolsa();
+                // Tem seu próprio Método
+                $animal[0][1] -> usarBolsa();
 
     echo "<hr>";// ______________________________________
 
-          // Na coluna dos Mamíferos temos o Cachorro
-          $animal[0][2] = new Cachorro();
+                // Na coluna dos Mamíferos temos o Cachorro
+                $animal[0][2] = new Cachorro();
 
-          // Herdou Atributos de Animal
-          $animal[0][2] -> setPeso("10 kg");
-          $animal[0][2] -> setIdade(16);
-          $animal[0][2] -> setMembros("Patas");
+                // Herdou Atributos de Animal
+                $animal[0][2] -> setPeso("10 kg");
+                $animal[0][2] -> setIdade(16);
+                $animal[0][2] -> setMembros("Patas");
 
-          // Herdou Atributos de Mamífero
-          $animal[0][2] -> setCorPelo("Laranja");
+                // Herdou Atributos de Mamífero
+                $animal[0][2] -> setCorPelo("Laranja");
 
-          print_r($animal[0][2]);
-          
-          // Herdou Métodos de Animal
-          $animal[0][2] -> locomover();
-          $animal[0][2] -> alimentar();
-          $animal[0][2] -> emitirSom();
+                print_r($animal[0][2]);
+                
+                // Herdou Métodos de Animal
+                $animal[0][2] -> locomover();
+                $animal[0][2] -> alimentar();
+                $animal[0][2] -> emitirSom();
 
-          // Tem seus próprios Métodos
-          $animal[0][2] -> abanarRabo();
-          $animal[0][2] -> enterrarOsso();
+                // Tem seus próprios Métodos
+                $animal[0][2] -> abanarRabo();
+                $animal[0][2] -> enterrarOsso();
 
           
           
@@ -144,43 +144,43 @@
 
     echo "<hr>";// ______________________________________
           
-          // Na coluna de Reptil temos a Cobra
-          $animal[1][1] = new Cobra();
+                // Na coluna de Reptil temos a Cobra
+                $animal[1][1] = new Cobra();
 
-          // Herdou Atributos de Animal
-          $animal[1][1] -> setPeso("2 kg");
-          $animal[1][1] -> setIdade(30);
-          $animal[1][1] -> setMembros("Nenhum");
-          
-          // Herdou Atributos de Reptil
-          $animal[1][1] -> setCorEscama("Verde");
+                // Herdou Atributos de Animal
+                $animal[1][1] -> setPeso("2 kg");
+                $animal[1][1] -> setIdade(30);
+                $animal[1][1] -> setMembros("Nenhum");
+                
+                // Herdou Atributos de Reptil
+                $animal[1][1] -> setCorEscama("Verde");
 
-          print_r($animal[1][1]);
-          
-          // Herdou Métodos de Animal
-          $animal[1][1] -> locomover();
-          $animal[1][1] -> alimentar();
-          $animal[1][1] -> emitirSom();
+                print_r($animal[1][1]);
+                
+                // Herdou Métodos de Animal
+                $animal[1][1] -> locomover();
+                $animal[1][1] -> alimentar();
+                $animal[1][1] -> emitirSom();
 
     echo "<hr>";// ______________________________________
           
-          // Na coluna de Reptil temos a Tartaruga
-          $animal[1][2] = new Tartaruga();
+                // Na coluna de Reptil temos a Tartaruga
+                $animal[1][2] = new Tartaruga();
 
-          // Herdou Atributos de Animal
-          $animal[1][2] -> setPeso("5 kg");
-          $animal[1][2] -> setIdade(120);
-          $animal[1][2] -> setMembros("Casco");
-          
-          // Herdou Atributos de Reptil
-          $animal[1][2] -> setCorEscama("Verde");
+                // Herdou Atributos de Animal
+                $animal[1][2] -> setPeso("5 kg");
+                $animal[1][2] -> setIdade(120);
+                $animal[1][2] -> setMembros("Casco");
+                
+                // Herdou Atributos de Reptil
+                $animal[1][2] -> setCorEscama("Verde");
 
-          print_r($animal[1][2]);
-          
-          // Herdou Métodos de Animal
-          $animal[1][2] -> locomover(); // Sobrescrito pela classe
-          $animal[1][2] -> alimentar();
-          $animal[1][2] -> emitirSom();
+                print_r($animal[1][2]);
+                
+                // Herdou Métodos de Animal
+                $animal[1][2] -> locomover(); // Sobrescrito pela classe
+                $animal[1][2] -> alimentar();
+                $animal[1][2] -> emitirSom();
 
           
           
@@ -215,26 +215,26 @@
 
     echo "<hr>";// ______________________________________
 
-          // Na coluna de Peixe temos o PeixeDourado
-          $animal[2][1] = new PeixeDourado();
+                // Na coluna de Peixe temos o PeixeDourado
+                $animal[2][1] = new PeixeDourado();
 
-          // Herdou Atributos de Animal
-          $animal[2][1] -> setPeso("5 kg");
-          $animal[2][1] -> setIdade(120);
-          $animal[2][1] -> setMembros("Casco");
-          
-          // Herdou Atributos de Peixe
-          $animal[2][1] -> setCorEscama("Verde");
+                // Herdou Atributos de Animal
+                $animal[2][1] -> setPeso("5 kg");
+                $animal[2][1] -> setIdade(120);
+                $animal[2][1] -> setMembros("Casco");
+                
+                // Herdou Atributos de Peixe
+                $animal[2][1] -> setCorEscama("Verde");
 
-          print_r($animal[2][1]);
-          
-          // Herdou Métodos de Animal
-          $animal[2][1] -> locomover();
-          $animal[2][1] -> alimentar();
-          $animal[2][1] -> emitirSom();
+                print_r($animal[2][1]);
+                
+                // Herdou Métodos de Animal
+                $animal[2][1] -> locomover();
+                $animal[2][1] -> alimentar();
+                $animal[2][1] -> emitirSom();
 
-          // Herdou Métodos de Peixe
-          $animal[2][1] -> soltarBolhas();
+                // Herdou Métodos de Peixe
+                $animal[2][1] -> soltarBolhas();
           
 
           
@@ -270,26 +270,26 @@
 
     echo "<hr>";// ______________________________________
 
-        // Na coluna de Ave temos a Arara
-        $animal[3][1] = new Arara();
+                // Na coluna de Ave temos a Arara
+                $animal[3][1] = new Arara();
 
-        // Herdou Atributos de Animal
-        $animal[3][1] -> setPeso("5 kg");
-        $animal[3][1] -> setIdade(120);
-        $animal[3][1] -> setMembros("Casco");
-        
-        // Herdou Atributos de Arara
-        $animal[3][1] -> setCorPena("Verde");
+                // Herdou Atributos de Animal
+                $animal[3][1] -> setPeso("5 kg");
+                $animal[3][1] -> setIdade(120);
+                $animal[3][1] -> setMembros("Casco");
+                
+                // Herdou Atributos de Arara
+                $animal[3][1] -> setCorPena("Verde");
 
-        print_r($animal[3][1]);
-        
-        // Herdou Métodos de Animal
-        $animal[3][1] -> locomover();
-        $animal[3][1] -> alimentar();
-        $animal[3][1] -> emitirSom();
+                print_r($animal[3][1]);
+                
+                // Herdou Métodos de Animal
+                $animal[3][1] -> locomover();
+                $animal[3][1] -> alimentar();
+                $animal[3][1] -> emitirSom();
 
-         // Herdou Métodos de Ave
-         $animal[3][1] -> fazerNinho();
+                // Herdou Métodos de Ave
+                $animal[3][1] -> fazerNinho();
     
     //print_r($animal);
     ?>
