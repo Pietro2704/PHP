@@ -8,10 +8,10 @@ class Reptil extends Animal
     echo "Rastejando<br>";
   }
   public function alimentar(){
-    echo "Comendo alface<br>";
+    echo "Comida de reptil<br>";
   }
   public function emitirSom(){
-    echo "....HHÉÉÉÉ....<br>";
+    echo "Som de reptil<br>";
   }
  
   public function getCorEscama(){

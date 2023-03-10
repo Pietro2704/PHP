@@ -8,5 +8,8 @@ class Cachorro extends Mamifero
   public function abanarRabo(){
     echo "Abanando o rabo<br>";
   }
+  public function emitirSom(){
+    echo "Au! Au!<br>";
+  }
 }
 ?>

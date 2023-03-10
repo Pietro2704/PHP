@@ -8,5 +8,8 @@ class Canguru extends Mamifero
   public function locomover(){
     echo "Saltando<br>";
   }
+  public function emitirSom(){
+    echo "HÃÃ HUU<br>";
+  }
 }
 ?>

@@ -4,9 +4,6 @@ class Ave extends Animal
 {
   private $corPena;
 
-  public function fazerNinho(){
-    echo "Montando o ninho...<br>";
-  }
   public function locomover(){
     echo "locomovendo igual ave<br>";
   }
@@ -15,6 +12,9 @@ class Ave extends Animal
   }
   public function emitirSom(){
     echo "Som de ave<br>";
+  }
+  public function fazerNinho(){
+    echo "Montando o ninho...<br>";
   }
 
  
