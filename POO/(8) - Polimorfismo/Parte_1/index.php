@@ -13,11 +13,11 @@
       Permite que um mesmo nome represente vários comportamentos diferentes
 
     Assinatura do Método: 
-      Quantidade e os tipos dos parâmetros
+      É a quantidade e os tipos de seus parâmetros
 
     Tipos de Polimorfismo
-      1) Sobreposição
-      2) Sobrecarga
+      1) Sobreposição -- mesma assinatura, classe diferente
+      2) Sobrecarga -- assinatura diferente, mesma classe
       
    -->
 </head>
