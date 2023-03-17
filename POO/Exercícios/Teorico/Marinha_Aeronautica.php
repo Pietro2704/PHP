@@ -161,6 +161,42 @@
     b) Objetos são instâncias de uma classe
     c) Subclasse é uma classe definida por meio de outra classe
  -- d) Atributos são subprogramas que definem as operações em objetos de uma classe
+ 
+-------------------------------------------------------------------------------------------------------------------------------------------
+  (EAGS - 2011)
 
+  1) Observe o diagrama a seguir e assinale a alternativa correta, no que diz respeito a classe DecimalFormat
+
+            Format
+              |
+      ___NumberFormat___
+     |                  | 
+  ChoiceFormat    DeciamlFormat   
+
+  a) Classes são tipos abstratos de dados
+    b) Objetos são instâncias de uma classe
+    c) Subclasse é uma classe definida por meio de outra classe
+ -- d) Atributos são subprogramas que definem as operações em objetos de uma classe
+    
+-------------------------------------------------------------------------------------------------------------------------------------------
+  (CAP-PD - 2016)
+
+  1) Segundo Deitel (2010)com relação a Linguagem de Programção JAVA, é correto afirmar que:
+
+    a) Um construtor pode ter um nome diferente de sua classe
+ -- b) O compilador fornece um construtor padrão sem parâmetros em qualquer classe que não inclui explicitamente um construtor
+    c) Se uma classe não incluir um construtor, as varíaveis de instância não são inicializadas
+    d) não existe o conceito de construtor na linguagem JAVA
+    
+-------------------------------------------------------------------------------------------------------------------------------------------
+  (CAP-PD - 2010)
+
+  1) Uma das formas de reutilização de um software é a criação de uma classe que absorve membros de outra classe ja existente.
+  A nova classe é aprimorada com capacidades novas ou modificadas.
+
+    a) Recursão
+ -- b) Herança
+    c) Orientação a aspesctos
+    d) Chamada por parâmetros
 */
 ?>
