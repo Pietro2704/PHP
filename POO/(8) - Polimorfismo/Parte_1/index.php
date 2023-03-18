@@ -5,21 +5,6 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <!-- 
-    POLI = muitos
-    Morfo = forma
-
-    Polimorfismo: 
-      Permite que um mesmo nome represente vários comportamentos diferentes
-
-    Assinatura do Método: 
-      É a quantidade e os tipos de seus parâmetros
-
-    Tipos de Polimorfismo
-      1) Sobreposição -- mesma assinatura, classe diferente
-      2) Sobrecarga -- assinatura diferente, mesma classe
-      
-   -->
 </head>
 <body>
   
