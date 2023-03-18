@@ -31,6 +31,7 @@
   $lut[] = new Lutador("Peter Parker","Queens",17,1.70,70,0,0,0);
 
   
+  
   $ufc = array();
   $ufc[] = new Luta();
   $ufc[0] -> marcarLuta($lut[0],$lut[2]);
