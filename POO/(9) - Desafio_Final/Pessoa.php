@@ -1,5 +1,5 @@
 <?php 
-class Pessoa
+abstract class Pessoa
 {
   protected $nome;
   protected $idade;
@@ -7,7 +7,12 @@ class Pessoa
   protected $experiencia;
 
 
-
+  public function __construct($no,$idad,$sex) {
+    $this->nome = $no;
+    $this->idade = $idad;
+    $this->sexo = $sex;
+    $this->experiencia = 0;
+  }
 
   public function getNome(){
     return $this->nome;
@@ -48,7 +53,7 @@ class Pessoa
 
 
 
-  
+
   protected function ganharEXP($var)
   {
     $this->setExperiencia($this->getExperiencia()+$var);

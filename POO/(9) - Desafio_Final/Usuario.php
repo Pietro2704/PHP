@@ -5,9 +5,14 @@ class Usuario extends Pessoa
   private $login;
   private $totAssistido;
 
+  public function __construct($nome,$idade,$sexo,$login) {
+    parent::__construct($nome,$idade,$sexo);
+    $this->login = $login;
+  }
+
   public function viuMaisUm()
   {
-    
+    $this->setTotAssistido($this->getTotAssistido()+1);
   }
 
    public function getLogin(){

@@ -1,12 +1,20 @@
 <?php 
-require_once "Acesso.php";
-class Video implements Acesso
+require_once "AcoesVideo.php";
+class Video implements AcoesVideo
 {
   private $titulo;
   private $avaliacao;
   private $views;
   private $curtidas;
   private $reproduzindo;
+
+  public function __construct($ti) {
+    $this->titulo = $ti;
+    $this->avaliacao = 1;
+    $this->views = 0;
+    $this->curtidas = 0;
+    $this->reproduzindo = false;
+  }
 
 
   
