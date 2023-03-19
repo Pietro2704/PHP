@@ -16,5 +16,15 @@
     CRIAR CLASSE GAFANHOTO QUE HERDA DE PESSOA, ATRIBUTOS PRIVADOS (login e totAssistido), TEM UM MÉTODO PUBLICO (viuMaisUm)
 
    -->
+   
+  <?php 
+    require_once "Video.php";
+    require_once "Acesso.php";
+    require_once "Pessoa.php";
+    require_once "Usuario.php";
+
+
+
+  ?>
 </body>
 </html>
