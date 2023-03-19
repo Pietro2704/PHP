@@ -19,6 +19,15 @@
  -- c) Comportamento são as características de uma classe invisíveis externamente
     d) O estado de um objeto é o significado combinado das variáveis internas do objeto
 
+
+
+  3) "de inclusão", "paramétrico", "sobrecarga" e "sobreposição" são quatro tipos de:
+
+    a) projetos orientados a objeto
+    b) Encapsulamento
+ -- c) Polimorfismo
+    d) Herança
+
 -------------------------------------------------------------------------------------------------------------------------------------------
   (EAGS - 2010)
 
@@ -102,6 +111,15 @@
     c) 2, 3, 1, 5, 4
     d) 2, 4, 3, 1, 5
 
+
+
+  2) Quando se utiliza, dentro de uma mesma classe, um mesmo nome de método para muitos métodos diferentes, estamos utilizando o conceito de:
+
+    a) Herança
+    b) Sobreposição
+ -- c) Sobrecarga
+    d) Polimorfismo paramétrico
+
 -------------------------------------------------------------------------------------------------------------------------------------------
   (EAGS - 2013)
 
@@ -131,6 +149,34 @@
     c) 2, 3, 1, 4
  -- d) 2, 4, 1, 3
 
+
+
+  3) De acordo com os conceitos de POO, relacione as lacunas:
+
+    (1) Classe Abstrata                () Não pode ser sobrescrito
+    (2) Classe Final                   () Nunca será instanciado
+    (3) Método abstrato                () Não pode ser superclasse
+    (4) Método final                   () Deve ter implementação na subclasse
+
+    a) 3, 1, 4, 2
+    b) 4, 2, 1, 3
+ -- c) 4, 1, 2, 3
+    d) 4, 1, 3, 2
+
+
+
+  4) Informe se é falso ou verdadeiro o que se informa sobre os conceitos de POO:
+
+    () A especialização permite que você remova da classe filha comportamentos e atributos
+    () A superclasse herda os atributos e comportamentos da subclasse
+    () Os métodos de acesso privados não são herdados pela filha
+    () Protegido é o nível de acesso onde se restringe o acesso à classe atual e às suas filhas
+
+    a) F - F - V - F
+    b) V - V - V - V
+    c) V - V - F - V
+ -- d) V - F - V - F
+
 -------------------------------------------------------------------------------------------------------------------------------------------
   (EAGS - 2014)
 
@@ -140,6 +186,16 @@
     b) Herança, Polimorfismo e Metodologia
  -- c) Encapsulamento, Herança e Polimorfismo
     d) Encapsulamento, Polimorfismo e Metodologia
+
+
+
+  2) O polimorfismo permite que um único _____ expresse muitos comportamentos diferentes. Um tipo de polimorfismo é _____, que permite que
+  possa ser declarado o memso _____ várias vezes, sendo que cada declaração diferente simplesmente no(a) _____ e _____ de argumentos.
+
+    a) tipo, método, nome, sobrecarga, número
+ -- b) nome, sobrecarga, método, número, tipo
+    c) tipo, sobrecarga, número, método, nome
+    d) método, nome, tipo, sobrecarga, número
 
 -------------------------------------------------------------------------------------------------------------------------------------------
   (EAGS - 2015)
@@ -275,6 +331,80 @@
  -- b) Polimorfismo
     c) Atributo
     d) Encapsulamento
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+  (CeV - 2016)
+
+  1) Faz parte da assinatura de um método:
+    
+    ( 1 ) - Seu nome
+    ( 2 ) - Quantidade de parâmetros
+    ( 3 ) - Quantidade de linhas de código
+    ( 4 ) - Posição do método na classe
+    ( 5 ) - Os tipos dos seus parâmetros
+    ( 6 ) - O tipo de retorno do método
+
+    a) 1, 2, 3
+    b) 1, 3, 4, 6
+    c) 1, 2, 3, 5
+ -- d) 1, 2, 5
+
+
+
+ 2) Considerando a declaração do método a seguir:
+
+    ' Metodo tarefa (a,b: Inteiro): Real '
+
+    Qual seria a única linha inválida para realizar a sobrecarga desse método dentro da mesma classe?
+
+    a) Metodo tarefa(): Inteiro
+    b) Metodo tarefa(x: Inteiro, y: Real): Lógico
+ -- c) Metodo tarefa(x,y: Inteiro): Inteiro
+    d) Metodo tarefa(a,b: Real): Real
+
+
+
+ 3) Considerando a declaração do método a seguir:
+
+    ' Metodo tarefa (a,b: Inteiro): Real '
+
+    Qual seria a única linha válida para realizar a sobreposição desse método dentro de outra classe?
+
+ -- a) @Sobrepor  Metodo tarefa(x,y: Inteiro): Logico
+    b) Metodo tarefa(x: Inteiro, y: Inteiro): Real
+    c) @Sobrepor  Metodo tarefa(x,y: Real): Inteiro
+    d) Metodo tarefa(): Real
+
+
+
+  4) Considerando as declarações a seguir:
+
+    Classe abstrata A
+    Classe final B
+    Classe C estende X
+
+    Qual seria a única linha inválida para declarar uma Classe D?
+
+    a) Classe D estende A
+ -- b) Classe D estende B
+    c) Classe D estende C
+    d) Classe D estende X
+
+
+
+  5) Considerando os seguintes métodos sobrecarregados:
+
+    Metodo x()
+    Metodo x(a,b: Inteiro)
+    Metodo x(y: Real)
+    Metodo x(z: Caractere, m: Inteiro)
+
+    Qual seria a única linha inválida para realizar a chamada ao Metodo x() ?
+
+    a) x();
+    b) x(3,7);
+    c) x(3.7);
+ -- d) x("Teste");
     
 
 */
