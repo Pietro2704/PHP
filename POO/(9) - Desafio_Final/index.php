@@ -34,9 +34,16 @@
 
 
       $visu = array();
+
       $visu[] = new Visualizacao($u[0], $v[0]);
+      $visu[0]->avalie();
+
       $visu[] = new Visualizacao($u[0], $v[1]);
+      $visu[1]->darNota(9);
+
       $visu[] = new Visualizacao($u[0], $v[2]);
+      $visu[2]->avaliarPorcentagem(75);
+
 
       $visu[] = new Visualizacao($u[1], $v[0]);
       $visu[] = new Visualizacao($u[1], $v[1]);
@@ -51,6 +58,7 @@
       $visu[] = new Visualizacao($u[3], $v[2]);
       
       print_r($u[1]);
+
       print_r($v[0]);
       print_r($v[1]);
       print_r($v[2]);

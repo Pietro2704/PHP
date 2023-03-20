@@ -15,11 +15,11 @@ class Visualizacao
 
   public function avalie()
   {
-    this->filme->setAvaliacao(5);
+    $this->filme->setAvaliacao(5);
   }
   public function darNota($nota)
   {
-    this->filme->setAvaliacao($nota);
+    $this->filme->setAvaliacao($nota);
   }
   public function avaliarPorcentagem($porc)
   {
