@@ -46,8 +46,13 @@
 
 
       $visu[] = new Visualizacao($u[1], $v[0]);
+      $visu[3]->avaliarPorcentagem(60);
+
       $visu[] = new Visualizacao($u[1], $v[1]);
+      $visu[4]->darNota(7);
+
       $visu[] = new Visualizacao($u[1], $v[2]);
+      $visu[5]->avalie();
 
       $visu[] = new Visualizacao($u[2], $v[0]);
       $visu[] = new Visualizacao($u[2], $v[1]);
