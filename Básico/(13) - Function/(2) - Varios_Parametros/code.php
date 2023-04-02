@@ -147,7 +147,7 @@
   //request once
   // include por mais q nn exista o arquivo, o programa ainda tenta ler o resto, ja request como é requerido, se nn achar o arquivo, para tudo!!!
 
-    include "function.php";
+    include "funcao.php";
     ola();
     echo "<br>";
     som(1,3,5,7,9);
