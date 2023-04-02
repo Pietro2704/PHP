@@ -9,6 +9,7 @@
 <body>
   <pre>
   <?php
+  
   $v = array(9,7,8,5,6,3,4,1,2);
   print_r($v);
   echo "<hr>";

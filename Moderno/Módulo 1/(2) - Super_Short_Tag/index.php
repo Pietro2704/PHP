@@ -18,9 +18,9 @@
 <?php
 /*
     <?php ?> -- Super Tag PHP
+    <?= ?> -- short Tag PHP
     <?  ?> -- short open tag     (Não se usa mais)
     <%  %> -- ASP Tag           (Não se usa mais)
-    <?= ?> -- short Tag PHP
 
   */
 ?>

@@ -21,9 +21,10 @@
     ?>
     <table border="1"><tr>
     <?php
-      $c = range(5,50,9);
-      //range eh um vetor q se inicia no 5, termina no 50 e pula de 9 em 9
+      $c = range(5,50,9); //range eh um vetor q se inicia no 5, termina no 50 e pula de 9 em 9
+
       print_r($c);
+      
       echo "<br><br><br>";
       foreach($c as $valor){
         echo "<td>$valor ";
