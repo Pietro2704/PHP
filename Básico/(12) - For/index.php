@@ -26,22 +26,24 @@
   <hr>
   <?php
 
-    $n = isset($_GET["num"])?$_GET["num"]:2;
-    $divisores = 0;
+    if(isset($_GET["submit"])){
+      $n = isset($_GET["num"])?$_GET["num"]:2;
+      $divisores = 0;
+    
+      for($count=2; $count<$n; $count++){
+        if($n % $count == 0){
+          echo "Multiplo de $count<br>";
+          $divisores++;
+        }
+      }
   
-    for($count=2; $count<$n; $count++){
-      if($n % $count == 0){
-        echo "Multiplo de $count<br>";
-        $divisores++;
+      if($divisores){
+        echo "$n não é primo, tem $divisores divisores além de 1 e ele mesmo";
+      }
+      else{
+        echo "$n é primo!";
       }
     }
-
-  if($divisores){
-    echo "$n não é primo, tem $divisores divisores além de 1 e ele mesmo";
-  }
-  else{
-    echo "$n é primo!";
-  }
   
  ?>
 </body>

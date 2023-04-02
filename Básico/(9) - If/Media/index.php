@@ -27,6 +27,6 @@
   }
   ?>
   <br>
-  <a href="estudo010.html">Voltar</a>
+  <a href="index.html">Voltar</a>
 </body>
 </html>
